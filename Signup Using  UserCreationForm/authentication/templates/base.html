@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/b.css' %}">
+</head>
+<body>
+<div class="container-fluid">
+    <h1>MYSITE</h1>
+    <nav class="navbar navbar-custom">
+        <ul class="nav navbar-nav">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+             <li><a href="{% url 'signup1' %}">SIGNUP</a></li>
+        </ul>
+
+    </nav
+    {% block body_block %}
+    {% endblock %}
+
+
+</div>
+
+</body>
+</html>
